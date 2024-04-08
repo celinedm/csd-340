@@ -1,0 +1,39 @@
+.container h1 {
+    text-align: center;
+}
+h1, h3, figcaption {
+    text-align: center;
+  }
+
+#image-gallery {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 10%;
+  }
+
+img{
+    width: auto;
+    height: 200px;
+    margin-left: 100px;
+}
+figcaption {
+    font-style: italic;
+    font-size: 0.75em;
+  }
+
+  h1{
+    color: rgba(44, 110, 72);
+  }
+  h3{
+    color: rgba(99, 14, 18);
+  }
+  figcaption{
+    color: rgba(41, 27, 92);
+  }
+
+footer{
+    text-align: right;
+    margin-top: 10%;
+    margin-right: 30px;
+}
+  
