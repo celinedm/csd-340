@@ -5,4 +5,3 @@ Spring 2024 CSD 340
 - Celine Del Mundo
 - Professor Sue Sampson
 
-- Building a Biography Site
