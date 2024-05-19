@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="DelMundo_Mod3_3.css" rel="stylesheet">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+</head>
+<body>
+    <div class = "container">
+        <h1>Assignment 12.2: JavaScript - Part 4</h1>
+        <div class = "column1">
+            <h3>Top 10 Favorite Books</h3>
+            <br>
+            <button onclick="up()">Top To Bottom</button>
+            <button oncllick= "down()">Bottom To Top</button>
+            <hr>
+           <ol id = "books">
+            <li>Love Hypothesis</li>
+            <li>Harry Potter</li>
+            <li>Homosapiens: A Brief History to Humankind</li>
+            <li>The Odyssey</li>
+            <li>To Kill A Mockingbird</li>
+            <li>It</li>
+            <li>Hell Divers</li>
+            <li>Dance of Theives</li>
+            <li>The Priory of the Orange Tree</li>
+            <li>Hunger Games</li>
+           </ol>
+        </div>
+        <div class = "column2">
+            <h3>5 things I've Learned Since The Course Started</h3>
+            <ol id = "roman">
+                <li>You can create 11 different types of Meta Tags</li>
+                <li>You can impliment HTML and CSS files in GitHub without having them in folders</li>
+                <li>Linking html files in GitHub</li>
+                <li>You can create a tone through the website</li>
+                <li>Red and Blue are not great combinations to understand depth</li>
+            </ol>
+        </div>
+        <div class = "under"></div>
+        <div class = "last"><a href = "https://github.com/celinedm/csd-340" >Landing Page</a></div>
+    </div>
+    <footer>
+        <a href =" https://celinedm.github.io/csd-340/">Landing Page</a>
+    </footer>
+    <script>
+        function up(){
+            var titles = document.getElementById("books");
+            var titleList = titles.getElementsByTagName("li");
+            for( var i = titleList.length; i >= 0; i++){
+                titles.appendChild(titleList[i]);
+            }
+            document.getElementById("books").reversed= false;
+        }
+
+        function down() { 
+            var titles = document.getElementById("books");
+            var titleList = titles.getElementsByTagName("li");
+            for( var i = titleList.length - 1; i >= 0; i--){
+                titles.appendChild(titleList[i]);
+            }
+            document.getElementById("books").reversed= true;
+        }
+    </script>
+    
+</body>
+</html>
